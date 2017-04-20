@@ -1,1 +1,1 @@
-# laravel-style-guide-package
+# laravel-style-guide
