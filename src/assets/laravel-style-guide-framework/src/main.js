@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  el: '#laravel-style-guide',
   router,
   template: '<App/>',
   components: { App }

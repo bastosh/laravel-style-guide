@@ -37,7 +37,7 @@ class LSGServiceProvider extends ServiceProvider {
         // Publish your config
         $this->publishes([
             __DIR__.'/../config/config.php' => config_path($this->packageName.'.php'),
-        ], 'config');
+        ], 'sections');
 
         //
     }

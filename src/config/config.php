@@ -6,7 +6,7 @@
     |--------------------------------------------------------------------------
     | This is the configuration for Laravel Style Guide
     */
-
-    //'key' => 'value',                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-
+    'Typography' => 'typeography.html',
+    'Buttons' => 'buttons.html',
+    'Forms' => 'forms.html',
 ];
