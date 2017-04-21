@@ -1,0 +1,25 @@
+{
+    "name": "dolbex/laravel-style-guide",
+    "description": "Style guide generator for laravel",
+    "keywords": [],
+    "homepage": "",
+    "authors": [
+        {
+            "name": "Gary Williams",
+            "email": "gary@lbm.co"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+      "psr-4": {
+          "Dolbex\\LaravelStyleGuide\\": "src/LaravelStyleGuide/"
+      }
+    },
+    "license": "MIT"
+
+}
