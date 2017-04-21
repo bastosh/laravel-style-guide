@@ -12,7 +12,7 @@
         $finalSectionsArr = [];
         $sections = config('laravel-style-guide');
         foreach($sections as $sectionName => $section) {
-          $finalSectionsArr[] = [
+          $finalSectionsArr[str_slug($sectionName)] = [
             'name' => $sectionName,
             'template' => $section,
             'path' => str_slug($sectionName)
