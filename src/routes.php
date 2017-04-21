@@ -7,7 +7,17 @@
    return view('laravel-style-guide::styleguide');
  });
 
- Route::get('/style-guide/buttons', function () {
-   $path = base_path('vendor/dolbex/laravel-style-guide/src/views/sections/');
-   return File::get($path . '/buttons.html');
- });
+// TODO: Check to see if the views are published if they are use that Directory
+$templatesPath = base_path('vendor/dolbex/laravel-style-guide/src/views/sections/');
+
+$dir = new DirectoryIterator($templatesPath);
+foreach ($dir as $fileinfo) {
+  if (!$fileinfo->isDot()) {
+    $info = pathinfo($fileinfo);
+
+    Route::get('/style-guide/' . $info['filename'], function () use ($info) {
+      $path = base_path('vendor/dolbex/laravel-style-guide/src/views/sections/');
+      return File::get($path . '/' . $info['basename']);
+    });
+  }
+}

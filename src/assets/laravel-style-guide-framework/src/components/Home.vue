@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'section',
+  name: 'home',
   data () {
     return {}
   }
