@@ -1,0 +1,9 @@
+{
+  "name": "laravel-style-guide",
+  "version": "1.0.0",
+  "description": "Laravel Style Guide Framework",
+  "main": "index.js",
+  "repository": "https://dolbex@github.com/dolbex/laravel-style-guide.git",
+  "author": "Gary Williams <gary@lbm.co>",
+  "license": "MIT"
+}

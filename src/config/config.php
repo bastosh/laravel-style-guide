@@ -1,12 +1,12 @@
 <?php return [
-    
+
     /*
     |--------------------------------------------------------------------------
     | Package Configuration Option
     |--------------------------------------------------------------------------
-    | Describe what it does. 
+    | This is the configuration for Laravel Style Guide
     */
 
-    //'key' => 'value',
+    //'key' => 'value',                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
 ];
