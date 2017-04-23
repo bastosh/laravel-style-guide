@@ -1,5 +1,5 @@
 <template>
-  <ul class="navigation">
+  <ul>
     <li><router-link :to="{ name: 'Home'}">Home</router-link></li>
     <li v-for="navigationItem in navigationItems">
       <router-link :to="{ name: 'Section', params: { sectionname: navigationItem.path  }}">{{ navigationItem.name }}</router-link>
@@ -20,3 +20,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  @import "./../sass/meyers-reset";
+</style>
