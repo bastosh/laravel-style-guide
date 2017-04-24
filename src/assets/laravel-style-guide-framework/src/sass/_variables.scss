@@ -1,0 +1,20 @@
+// breakpoint variables
+$lg: 1170px;
+$md: 1024px;
+$sm: 640px;
+$xs: 480px;
+
+// body font size
+$browser-context: 16;
+
+// typography
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$sansSerif: 'Roboto', Helvetica, Arial, sans-serif;
+
+// typography scale
+$h1-font-size: (null: 48, $md: 48, $sm: 40, $xs: 32);
+$h2-font-size: (null: 36, $md: 36, $sm: 32, $xs: 26);
+$h3-font-size: (null: 28, $md: 28, $sm: 24, $xs: 22);
+$h4-font-size: (null: 18, $md: 18, $sm: 18, $xs: 18);
+
+$body-font-size: (null: 16);

@@ -19,18 +19,15 @@ export default {
   methods: {
     fetchData: function () {
       this.sectionKey = this.$route.params.sectionname
-      // this.$http.get('style-guide/' + this.sectionKey, function (data, status, request) {
-      //   console.log(status)
-      //   // var parser = new DOMParser()
-      //   // var doc = parser.parseFromString(data, 'text/html')
-      //   // console.log(doc)
-      //   // self.resolve({
-      //   //   template: doc
-      //   // })
-      // })
 
       this.$http.get('style-guide/' + this.sectionKey).then(response => {
         this.template = response.body
+        this.$nextTick(function () {
+          var code = document.getElementsByClassName('highlight')
+          for (var i = 0; i < code.length; i++) {
+            window.hljs.highlightBlock(code[i])
+          }
+        })
       }, response => {
         // error callback
       })
