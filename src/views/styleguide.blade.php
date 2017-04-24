@@ -9,19 +9,6 @@
 
     {{-- Change this to point to your stylesheet --}}
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}" />
-
-    <style>
-    .hljs {
-      display: block;
-      overflow-x: auto;
-      padding: 0.5em;
-      font-size:1.2em;
-      line-height:1.3em;
-    }
-    pre.inline { display:inline; }
-    pre.inline > code.hljs { display: inline; }
-    pre.inline > code.hljs { font-size:12px; }
-    </style>
   </head>
   <body>
 

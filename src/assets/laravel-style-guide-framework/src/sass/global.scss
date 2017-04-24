@@ -65,4 +65,15 @@
       font-size:0.8em;
     }
   }
+
+  .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    font-size:1.2em;
+    line-height:1.3em;
+  }
+  pre.inline { display:inline; padding:2px }
+  pre.inline > code.hljs { display: inline; }
+  pre.inline > code.hljs { font-size:12px; }
 }
