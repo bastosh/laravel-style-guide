@@ -10,7 +10,7 @@ To customize this style guide you will first need to publish the assets. This wi
 php artisan vendor:publish
 ```
 
-## Creating new pages<
+## Creating new pages
 
 To create a new page of the style guide (which will also add it to the navigation) you need to do two things:
 
