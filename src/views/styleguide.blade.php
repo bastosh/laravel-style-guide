@@ -15,6 +15,9 @@
       font-size:1.2em;
       line-height:1.3em;
     }
+    pre.inline { display:inline; }
+    pre.inline > code.hljs { display: inline; }
+    pre.inline > code.hljs { font-size:12px; }
     </style>
   </head>
   <body>

@@ -42,4 +42,27 @@
       }
     }
   }
+
+  .colors {
+    display:block;
+
+    &:after {
+      display:block;
+      content: "";
+      clear:both;
+    }
+
+    .color {
+      float:left;
+      width:100px;
+      height:100px;
+      border:1px solid #E0E0E0;
+      margin-right:16px;
+      border-radius:5px;
+      text-align:center;
+      padding:8px;
+      box-sizing: border-box;
+      font-size:0.8em;
+    }
+  }
 }
