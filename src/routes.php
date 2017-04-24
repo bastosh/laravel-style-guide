@@ -7,8 +7,7 @@
    return view('laravel-style-guide::styleguide');
  });
 
-// TODO: Check to see if the views are published if they are use that Directory
-$templatesPath = base_path('vendor/dolbex/laravel-style-guide/src/views/sections/');
+$templatesPath = resource_path('views/vendor/laravel-style-guide/sections/');
 
 $dir = new DirectoryIterator($templatesPath);
 foreach ($dir as $fileinfo) {

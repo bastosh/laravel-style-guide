@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/atelier-estuary-light.min.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
 
+    <script src="{{ URL::asset('vendor/laravel-style-guide/css/app.css') }}"></script>
     {{-- Change this to point to your stylesheet --}}
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}" />
   </head>
@@ -33,6 +34,7 @@
 
       window.sections = {!! json_encode($finalSectionsArr) !!};
     </script>
-    <script src="http://localhost:8080/app.js"></script>
+
+    <script src="{{ URL::asset('vendor/laravel-style-guide/js/app.js') }}"></script>
   </body>
 </html>

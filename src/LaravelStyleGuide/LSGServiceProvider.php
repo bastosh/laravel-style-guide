@@ -29,6 +29,10 @@ class LSGServiceProvider extends ServiceProvider {
         // Register Views from your package
         $this->loadViewsFrom(__DIR__.'/../views', $this->packageName);
 
+        $this->publishes([
+            __DIR__.'/../views' => resource_path('views/vendor/laravel-style-guide'),
+        ]);
+
         // Register your asset's publisher
         $this->publishes([
             __DIR__.'/../assets' => public_path('vendor/'.$this->packageName),
