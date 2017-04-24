@@ -18,7 +18,7 @@ To create a new page of the style guide (which will also add it to the navigatio
 2. Edit the config files in ```resources/views/vendor``` and add your new section to the configuration array
 
 ```php
-  &lt;?php return [
+  <?php return [
       'Typography' => 'typeography.html',
       'Buttons' => 'buttons.html',
       'Forms' => 'forms.html',
@@ -34,31 +34,31 @@ To create a new page of the style guide (which will also add it to the navigatio
 This is the general layout of any section in the page:
 
 ```html
-  &lt;div class="example"&gt;
-    &lt;button class="btn" type="button"&gt;Button button&lt;/button&gt;
-    &lt;a class="btn" href="#" role="button"&gt;Link button&lt;/a&gt;
+  <div class="example">
+    <button class="btn" type="button">Button button</button>
+    <a class="btn" href="#" role="button">Link button</a>
 
-    &lt;pre&gt;&lt;code class="highlight html"&gt;
-      &amp;lt;button class="btn" type="button"&amp;gt;Button button&amp;lt;/button&amp;gt;
-      &amp;lt;a class="btn" href="#" role="button"&amp;gt;Link button&amp;lt;/a&amp;gt;
-    &lt;/code&gt;&lt;/pre&gt;
+    <pre><code class="highlight html">
+      &lt;button class="btn" type="button"&gt;Button button&lt;/button&gt;
+      &lt;a class="btn" href="#" role="button"&gt;Link button&lt;/a&gt;
+    </code></pre>
 
-  &lt;/div&gt;
+  </div>
 ```
 
 Or you can avoid the annoying escaping it if it's in a blade.php file
 
 ```html
-    &lt;div class="example"&gt;
-      &lt;button class="btn" type="button"&gt;Button button&lt;/button&gt;
-      &lt;a class="btn" href="#" role="button"&gt;Link button&lt;/a&gt;
+    <div class="example">
+      <button class="btn" type="button">Button button</button>
+      <a class="btn" href="#" role="button">Link button</a>
 
-      &lt;pre&gt;&lt;code class="highlight html"&gt;
+      <pre><code class="highlight html">
         {{
-          '&lt;button class="btn" type="button"&gt;Button button&lt;/button&gt;
-          &lt;a class="btn" href="#" role="button"&gt;Link button&lt;/a&gt;'
+          '<button class="btn" type="button">Button button</button>
+          <a class="btn" href="#" role="button">Link button</a>'
         }}
-      &lt;/code&gt;&lt;/pre&gt;
+      </code></pre>
 
-    &lt;/div&gt;
+    </div>
   ```
