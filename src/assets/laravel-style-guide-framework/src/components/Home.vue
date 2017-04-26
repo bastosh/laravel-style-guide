@@ -25,7 +25,7 @@ export default {
             window.hljs.highlightBlock(code[i])
 
             // Event Dispatch
-            var evt = new CustomEvent('section-loaded', { sectionKey: 'home' })
+            var evt = new CustomEvent('section-loaded', { detail: 'home' })
             window.dispatchEvent(evt)
           }
         })
