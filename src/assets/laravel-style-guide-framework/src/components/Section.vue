@@ -27,7 +27,10 @@ export default {
           var code = document.getElementsByClassName('highlight')
           for (var i = 0; i < code.length; i++) {
             window.hljs.highlightBlock(code[i])
-            self.$emit('section-loaded', {sectionKey: this.sectionKey})
+
+            // Event Dispatch
+            var evt = new CustomEvent('section-loaded', { sectionKey: self.sectionKey })
+            window.dispatchEvent(evt)
           }
         })
       }, response => {

@@ -23,6 +23,10 @@ export default {
           var code = document.getElementsByClassName('highlight')
           for (var i = 0; i < code.length; i++) {
             window.hljs.highlightBlock(code[i])
+
+            // Event Dispatch
+            var evt = new CustomEvent('section-loaded', { sectionKey: 'home' })
+            window.dispatchEvent(evt)
           }
         })
       }, response => {
