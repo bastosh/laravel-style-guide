@@ -62,3 +62,14 @@ Or you can avoid the annoying escaping it if it's in a blade.php file
 
     </div>
   ```
+
+## JavaScript
+
+Because the sections are loaded via ajax you may need to reinitialize parts of your javascript if that's a requirement of your style guide. (Keep in mind that it's a style-guide). If this is the case you can capture a window event in your JS to fire off the functions necessary like-a-so:
+
+```javascript
+  window.addEventListener('section-loaded', function (e) {
+      // e.detail === the section key being loaded
+      console.log('section changed', e.detail);
+  });
+```
