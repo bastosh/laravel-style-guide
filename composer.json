@@ -20,6 +20,12 @@
           "Dolbex\\LaravelStyleGuide\\": "src/LaravelStyleGuide/"
       }
     },
-    "license": "MIT"
-
+    "license": "MIT",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dolbex\\LaravelStyleGuide\\LSGServiceProvider"
+            ]
+        }
+    }
 }
